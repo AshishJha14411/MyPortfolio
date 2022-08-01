@@ -261,9 +261,12 @@ img[alt="project-img"]:hover {
   width: 25rem;
   text-align: justify;
 }
+.heading{
+  margin-top: -1rem;
+}
 .article-text a {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 img[alt="article-img"] {
