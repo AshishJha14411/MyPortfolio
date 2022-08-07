@@ -11,9 +11,9 @@ html {
 body {
   background: linear-gradient(160deg, #000000, #1b495f);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
   color: rgb(18, 194, 191);
   padding: 1rem;
   font-family: "Merienda";
@@ -316,12 +316,25 @@ img[alt="article-img"] {
   padding: 1rem 2rem 1rem 2rem;
 }
 footer {
+  position: relative;
   font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
-
+.totop{
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 65px;
+  bottom: 25px;
+}
+.totop a{
+  padding: 1rem;
+  background-color: #033757;
+  font-size: 2rem;
+  color: #57c1f2;
+}
 @media (max-width: 575.98px) {
   body {
     margin: 0 -12rem 0 0rem;
