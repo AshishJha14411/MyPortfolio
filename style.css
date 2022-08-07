@@ -434,7 +434,7 @@ footer {
   }
   .totop{
     transform: scale(.6);
-    right: 50px
+    right: 100px
   }
 }
 @media (min-width: 1921px) {
