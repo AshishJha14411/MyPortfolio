@@ -212,6 +212,7 @@ img[alt="html"] {
 } /* 
 */
 .project-card:hover {
+  transition: ease-in .3s;
   box-shadow: 3px 3px 10px #12c2bf;
 }
 
@@ -220,6 +221,8 @@ img[alt="project-img"] {
   border-radius: 20px;
 }
 img[alt="project-img"]:hover {
+  
+  transition: ease-in .3s;
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 .desc {
@@ -240,7 +243,9 @@ img[alt="project-img"]:hover {
   border-radius: 57px;
 }
 .gitlink:hover {
+  transition: ease-in-out .37s;
   background-color: #ffffff;
+  font-weight: 900;
   color: #000000;
 }
 .livelink {
@@ -250,8 +255,11 @@ img[alt="project-img"]:hover {
   border-radius: 57px;
 }
 .livelink:hover {
+  transition: ease-in-out .37s;
   background-color: #fff;
   color: rgb(0, 0, 0);
+  
+  font-weight: 900;
 }
 .articles {
   display: flex;
@@ -263,14 +271,15 @@ img[alt="project-img"]:hover {
 .article-head {
   text-align: center;
   padding: 1rem 9rem;
+  font-size: 1.35rem;
 }
 .article-card {
   display: flex;
   justify-content: space-around;
   padding: 2rem 0rem 1rem 0rem;
   margin-bottom: 3rem;
-  width: 60rem;
-  height: 10rem;
+  width: 70%;
+  height: 13rem;
   background-color: #3f3c3c;
   border-radius: 37px;
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
@@ -280,6 +289,7 @@ img[alt="project-img"]:hover {
 }
 .article-text {
   width: 25rem;
+  font-size: 1rem;
   text-align: center;
 }
 .heading {
@@ -287,7 +297,7 @@ img[alt="project-img"]:hover {
 }
 .article-text a {
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 }
 
 img[alt="article-img"] {
@@ -326,7 +336,7 @@ footer {
   position: fixed;
   width: 3rem;
   height: 3rem;
-  right: 65px;
+  right: 50px;
   bottom: 25px;
 }
 .totop a{
@@ -335,9 +345,9 @@ footer {
   font-size: 2rem;
   color: #57c1f2;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   body {
-    margin: 0 -12rem 0 0rem;
+    margin: 0 -12rem 0 -2rem;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -368,7 +378,7 @@ footer {
     padding: 0rem;
   }
   .project-card {
-    margin: 2rem -1rem 0rem 0rem;
+    margin: 2rem -1rem 0rem -1rem;
   }
   .article-head {
     padding: 1rem 0 1rem 0;
@@ -378,17 +388,20 @@ footer {
     height: 5rem;
   }
   .article-card {
-    margin-left: -4rem;
+    margin-left: -3rem;
     padding: 2rem 0 0 0;
     width: 100%;
   }
   .totop{
     transform: scale(.5);
-    right: 10px;
+    margin-right: -2rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
+  body{
+    align-items: center;
+  }
   .navbar {
     padding-left: 0;
     margin-left: 0;
@@ -434,7 +447,7 @@ footer {
   }
   .totop{
     transform: scale(.6);
-    right: 100px
+    right: 1.1rem
   }
 }
 @media (min-width: 1921px) {
