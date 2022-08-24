@@ -349,6 +349,9 @@ footer {
   font-size: 2rem;
   color: #57c1f2;
 }
+.downloadcv{
+  display: none;
+}
 @media (max-width: 575px) {
   body {
     margin: 0 -12rem 0 -2rem;
